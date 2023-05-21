@@ -4,6 +4,8 @@ import React from "react";
 import { Poppins } from 'next/font/google'
 import HeaderLine from "./ui/HeaderLine";
 import MobileSidebar from "./ui/MobileSidebar";
+import { AnimatePresence } from 'framer-motion';
+
 
 const poppins = Poppins({ 
   weight: '400',
@@ -171,9 +173,12 @@ export default function Navbar(props: Props) {
 
           </div>
         </div>
-        <ul className={`${navbarOpen ? 'block' : 'hidden'}`}>
-          <MobileSidebar setNavbarOpen={setNavbarOpen} />
-        </ul>
+        <AnimatePresence
+    initial={false} mode="wait" >
+
+
+        {navbarOpen && <MobileSidebar setNavbarOpen={setNavbarOpen} />}
+    </AnimatePresence>
       </nav>
     </>
   );

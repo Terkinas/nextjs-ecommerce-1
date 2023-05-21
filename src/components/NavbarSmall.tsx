@@ -74,7 +74,7 @@ export default function NavbarSmall(props: Props) {
                   type="button"
                   style={{ transition: "all .15s ease" }}
                 >
-                  <ArrowDown className="mr-1" size={12} /> Download CV
+                  <ArrowDown className="mr-1" size={12} /> Atsisiųsti
                 </button>
               </li>
             </ul>

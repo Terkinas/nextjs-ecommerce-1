@@ -9,13 +9,40 @@ interface Category {
   subMenu: string[];
 }
 
+const sidebarWindow = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      type: 'tween',
+      ease: 'easeInOut',
+      duration: 0.5,
+    }
+  },
+  exit: {
+    opacity: 0,
+  }
+}
+
 const sidebarVariants = {
   hidden: {
     x: '-100%',
+    opacity: 0,
   },
   visible: {
     x: 0,
+    opacity: 1,
+    transition: {
+      type: 'tween',
+      ease: 'easeInOut',
+      duration: 0.5,
+    }
   },
+  exit : {
+    x: '-100%',
+  }
 };
   
 
@@ -43,8 +70,18 @@ const MobileSidebar = ({setNavbarOpen}: {setNavbarOpen: (state: boolean) => void
   };
 
   return (
-    <div className="fixed h-full top-0 left-0 w-full bg-black bg-opacity-50">
-    <div className="relative h-full w-3/5 max-w-sm bg-white drop-shadow-lg">
+    <motion.div 
+    variants={sidebarWindow}
+    initial="hidden"
+    animate="visible"
+    exit="exit"
+    className="fixed h-full top-0 left-0 w-full bg-black bg-opacity-50">
+    <motion.div
+      variants={sidebarVariants}
+      initial="hidden"
+      animate="visible"
+      exit='exit'
+     className="relative h-full w-3/5 max-w-sm bg-white drop-shadow-lg">
         <div className='flex items-center py-5 pt-6 justify-between px-4'>
             <Link href='/' className='text-sm'>Neprisijungęs</Link>
             <button onClick={() => setNavbarOpen(false)}> <X /> </button>
@@ -70,23 +107,10 @@ const MobileSidebar = ({setNavbarOpen}: {setNavbarOpen: (state: boolean) => void
           </li>
         ))}
       </ul>
-      <motion.div
-        style={{
-          width: 100,
-          height: 100,
-          backgroundColor: 'red',
-        }}
-        animate={{
-          rotate: 360,
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: 'linear',
-        }}
-      />
-    </div>
-  </div>
+    </motion.div>
+
+   
+  </motion.div>
   )
 }
 

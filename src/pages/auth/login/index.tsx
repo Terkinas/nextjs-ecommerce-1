@@ -30,10 +30,10 @@ export default function Login() {
                   <div className="rounded-t mb-0 px-6 lg:px-6 py-6">
                     <div className="text-left mb-6">
                       <h5 className="text-gray-600 text-xl font-bold">
-                        Hello Again!
+                        Sveiki dar kartą!
                       </h5>
                       <h6 className="text-gray-500 text-xs">
-                        Welcome back you&apos;ve been missed!
+                        Sveiki sugrįže mes jūsų pasiilgome!
                       </h6>
                     </div>
                     <div className="btn-wrapper text-left flex flex-col gap-2">
@@ -66,7 +66,7 @@ export default function Login() {
                   </div>
                   <div className="flex-auto px-6 lg:px-6 py-3 pt-0">
                     <div className="text-gray-500 text-center mb-3 font-bold">
-                      <small>Or sign in with credentials</small>
+                      <small className="text-xs text-gray-400 font-light">Arba junkitės su el.paštu </small>
                     </div>
                     <form>
                       <div className="relative w-full mb-3">
@@ -74,12 +74,12 @@ export default function Login() {
                           className="block text-gray-900 text-xs font-bold mb-2"
                           htmlFor="grid-password"
                         >
-                          Email*
+                          El.paštas*
                         </label>
                         <input
                           type="email"
                           className=" px-4 py-2 border border-1 border-gray-100 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                          placeholder="Enter your email"
+                          placeholder="Jūsų el.paštas"
                           style={{ transition: "all .15s ease" }}
                         />
                       </div>
@@ -89,12 +89,12 @@ export default function Login() {
                           className="block text-gray-900 text-xs font-bold mb-2"
                           htmlFor="grid-password"
                         >
-                          Password*
+                          Slaptažodis*
                         </label>
                         <input
                           type="password"
                           className="border border-1 border-gray-100 px-4 py-2 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                          placeholder="Create a password"
+                          placeholder="Sugalvokite slaptažodį"
                           style={{ transition: "all .15s ease" }}
                         />
                       </div>
@@ -107,7 +107,7 @@ export default function Login() {
                             style={{ transition: "all .15s ease" }}
                           /> */}
                           <span className=" text-xs  text-gray-500">
-                            Must be atleast 8 characters.
+                            Turi sudaryti daugiau nei 8 raidės.
                           </span>
                         </label>
                       </div>
@@ -118,7 +118,7 @@ export default function Login() {
                           type="button"
                           style={{ transition: "all .15s ease" }}
                         >
-                          Sign In
+                          Prisijungti
                         </button>
                       </div>
                     </form>
@@ -129,7 +129,7 @@ export default function Login() {
                     <Link href="/auth/register"
                       className="text-blue-400"
                     >
-                      <small>Forgot password?</small>
+                      <small>Pamiršote slaptažodį?</small>
                     </Link>
                   </div>
                   <div className="w-1/2 text-right cursor-pointer z-50">
@@ -138,7 +138,7 @@ export default function Login() {
       
                       className="text-gray-400"
                     >
-                      <small>Already have an account?</small>
+                      <small>Neturite paskyros?</small>
                     </Link>
                   </div>
                 </div>
