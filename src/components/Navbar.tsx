@@ -150,7 +150,6 @@ export default function Navbar(props: Props) {
               <li className="flex items-center">
                 <Link href="/auth/login"
                   className={"bg-gray-800 text-xs text-white active:bg-gray-900 hover:bg-gray-900 flex items-center  px-4  py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3"}
-                  type="button"
                   style={{ transition: "all .15s ease" }}
                 >
                     Sign Up
@@ -158,8 +157,8 @@ export default function Navbar(props: Props) {
               </li>
 
               <li className="flex items-center">
-                <button className="" onClick={() => setNavbarOpen(!navbarOpen)}>
-                  <Menu size={20} className="block lg:hidden cursor-pointer ml-3" />
+                <button className=" py-2 pl-3" onClick={() => setNavbarOpen(!navbarOpen)}>
+                  <Menu size={20} className="block lg:hidden cursor-pointer" />
                 </button>
               </li>
             </ul>

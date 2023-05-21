@@ -6,13 +6,9 @@ type Props = {
 
 export default function FooterSmall(props: Props) {
   return (
-    <>
+
       <footer
-        className={
-          (props.absolute
-            ? "absolute w-full bottom-0"
-            : "relative") + " pb-6"
-        }
+        className='relative w-full pb-12'
       >
         <div className="container mx-auto px-4">
           <hr className="mb-6 border-b-1 border-gray-200" />
@@ -67,6 +63,5 @@ export default function FooterSmall(props: Props) {
           </div>
         </div>
       </footer>
-    </>
   );
 }

@@ -11,8 +11,9 @@ import { signIn } from 'next-auth/react'
 export default function Login() {
   return (
     <>
-      <NavbarSmall />
+      
       <main>
+      <NavbarSmall />
         <section className="absolute w-full h-full">
           <div
             className="absolute top-0 w-full h-full"
