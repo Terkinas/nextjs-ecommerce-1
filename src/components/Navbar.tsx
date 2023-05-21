@@ -17,7 +17,7 @@ export default function Navbar(props: Props) {
   return (
     <>
       <nav
-        className={"top-0 absolute bg-white w-full z-50 flex flex-wrap items-center justify-between px-2 py-5 " + poppins.className}
+        className={"top-0 absolute bg-white w-full z-50 flex flex-wrap items-center justify-between px-2 py-3 " + poppins.className}
       >
         <div className="container max-w-6xl px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="relative flex justify-between items-center lg:w-auto lg:static lg:block lg:justify-start">
@@ -148,13 +148,13 @@ export default function Navbar(props: Props) {
               </li>
 
               <li className="flex items-center">
-                <button
-                  className={"bg-gray-800 text-white active:bg-gray-900 hover:bg-gray-900 flex items-center text-sm  px-4  py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3"}
+                <Link href="/auth/login"
+                  className={"bg-gray-800 text-xs text-white active:bg-gray-900 hover:bg-gray-900 flex items-center  px-4  py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3"}
                   type="button"
                   style={{ transition: "all .15s ease" }}
                 >
                     Sign Up
-                </button>
+                </Link>
               </li>
 
               <li className="flex items-center">
