@@ -26,7 +26,7 @@ export default function Login() {
           <div className="container mx-auto px-4 h-full">
             <div className="flex content-center items-center justify-center h-full">
               <div className="w-full lg:w-4/12 px-4">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-0 rounded-lg border-0">
+                <div className="relative flex flex-col min-w-0 break-words w-full mb-0 rounded border-0">
                   <div className="rounded-t mb-0 px-6 lg:px-6 py-6">
                     <div className="text-left mb-6">
                       <h5 className="text-gray-600 text-xl font-bold">
@@ -39,7 +39,7 @@ export default function Login() {
                     <div className="btn-wrapper text-left flex flex-col gap-2">
                       <button
                         onClick={() => signIn('github')}
-                        className="bg-white w-full active:bg-gray-100 text-gray-800 px-4 py-2 rounded-lg outline-none focus:outline-none mr-2 mb-1 shadow 
+                        className="bg-white w-full active:bg-gray-100 text-gray-800 px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 shadow 
                         hover:shadow-md inline-flex items-center justify-center font-bold text-xs border border-1 border-gray-100"
                         type="button"
                         style={{ transition: "all .15s ease" }}
@@ -49,7 +49,7 @@ export default function Login() {
                       </button>
                       <button
                         onClick={() => signIn('google')}
-                        className="bg-white w-full active:bg-gray-100 text-gray-800 px-4 py-2 rounded-lg outline-none focus:outline-none mr-1 mb-1 
+                        className="bg-white w-full active:bg-gray-100 text-gray-800 px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 
                         shadow hover:shadow-md inline-flex items-center justify-center font-bold text-xs border border-1 border-gray-100"
                         type="button"
                         style={{ transition: "all .15s ease" }}
@@ -78,7 +78,7 @@ export default function Login() {
                         </label>
                         <input
                           type="email"
-                          className=" px-4 py-2 border border-1 border-gray-100 placeholder-gray-400 text-gray-700 bg-white rounded-lg text-sm shadow focus:outline-none focus:ring w-full"
+                          className=" px-4 py-2 border border-1 border-gray-100 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                           placeholder="Enter your email"
                           style={{ transition: "all .15s ease" }}
                         />
@@ -93,7 +93,7 @@ export default function Login() {
                         </label>
                         <input
                           type="password"
-                          className="border border-1 border-gray-100 px-4 py-2 placeholder-gray-400 text-gray-700 bg-white rounded-lg text-sm shadow focus:outline-none focus:ring w-full"
+                          className="border border-1 border-gray-100 px-4 py-2 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                           placeholder="Create a password"
                           style={{ transition: "all .15s ease" }}
                         />
@@ -106,7 +106,7 @@ export default function Login() {
                             className="form-checkbox border-0 rounded text-gray-800 ml-1 w-5 h-5"
                             style={{ transition: "all .15s ease" }}
                           /> */}
-                          <span className=" text-xs font-semibold text-gray-700">
+                          <span className=" text-xs  text-gray-500">
                             Must be atleast 8 characters.
                           </span>
                         </label>
@@ -114,7 +114,7 @@ export default function Login() {
 
                       <div className="text-center mt-6">
                         <button
-                          className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold px-4 py-2 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
+                          className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
                           type="button"
                           style={{ transition: "all .15s ease" }}
                         >

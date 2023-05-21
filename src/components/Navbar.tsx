@@ -40,7 +40,7 @@ export default function Navbar(props: Props) {
           >
 
             <ul className={`flex flex-row items-center 
-            lg:items-center list-none gap-1 lg:ml-auto
+            lg:items-center list-none  lg:ml-auto
             `}>
             
             <li className=" items-center hidden lg:flex">

@@ -37,7 +37,7 @@ export default function NavbarSmall(props: Props) {
             id="example-navbar-warning"
           >
 
-            <ul className="flex flex-row items-end lg:items-center list-none lg:ml-auto">
+            <ul className="flex flex-row items-center lg:items-center list-none lg:ml-auto">
               
 
               <li className="flex items-center">
@@ -69,12 +69,12 @@ export default function NavbarSmall(props: Props) {
                     (props.transparent
                       ? "bg-white text-gray-800 active:bg-gray-100"
                       : "bg-gray-800 text-white active:bg-gray-900") +
-                    " flex items-center text-xs px-4 pl-2 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                    " flex items-center text-xs px-4 pl-2 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3"
                   }
                   type="button"
                   style={{ transition: "all .15s ease" }}
                 >
-                  <ArrowDown className="mr-1" size={16} /> Download CV
+                  <ArrowDown className="mr-1" size={12} /> Download CV
                 </button>
               </li>
             </ul>
