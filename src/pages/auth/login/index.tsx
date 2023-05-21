@@ -32,7 +32,7 @@ export default function Login() {
                         Hello Again!
                       </h5>
                       <h6 className="text-gray-500 text-xs">
-                        Welcome back you've been missed!
+                        Welcome back you&apos;ve been missed!
                       </h6>
                     </div>
                     <div className="btn-wrapper text-left flex flex-col gap-2">
