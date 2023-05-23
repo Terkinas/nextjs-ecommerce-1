@@ -156,7 +156,7 @@ export default function Navbar(props: Props) {
               </li>
 
               <li className="flex items-center">
-                <Link href="/auth/login"
+                <Link href="/prisijungimas"
                   className={"bg-gray-800 text-xs lg:text-base text-white active:bg-gray-900 hover:bg-gray-900 flex items-center  px-4  py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3"}
                   style={{ transition: "all .15s ease" }}
                 >

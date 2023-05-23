@@ -1,11 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import Navbar from '@/components/Navbar'
-import HeaderLine from '@/components/ui/HeaderLine'
 import Landing from '@/components/home/Landing'
-import CartTest from '@/components/home/CartTest'
-import CartView from '@/components/checkout/CartView'
+import CartSecond from '@/components/checkout/CartSecond'
 
 
 export default function Home() {
@@ -17,11 +14,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+
       <main className={styles.main}>
         <Landing />
-        <CartTest />
-        <CartView />
+        <CartSecond />
+      
       </main>
     </>
   )

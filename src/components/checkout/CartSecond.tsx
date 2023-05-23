@@ -3,7 +3,7 @@ import { useCart } from 'react-use-cart'
 
 type Props = {}
 
-function CartTest({}: Props) {
+const CartSecond = (props: Props) => {
 
     const {
         isEmpty,
@@ -12,19 +12,19 @@ function CartTest({}: Props) {
         updateItemQuantity,
         removeItem,
       } = useCart();
-    
-      console.log(items)
 
   return (
-    <>
+    <div>
+        <h5>CartSecond:</h5>
         <ul>
             {items.map((item) => {
                 return (
-                <li key={item.id}>{item.name}</li>
-            )})}
+                    <li key={item.id}>{item.name}</li>
+                )
+            })}
         </ul>
-    </>
+    </div>
   )
 }
 
-export default CartTest
+export default CartSecond
