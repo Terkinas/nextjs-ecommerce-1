@@ -1,4 +1,4 @@
-import { X } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react'
 import { motion } from 'framer-motion';
@@ -82,8 +82,19 @@ const MobileSidebar = ({setNavbarOpen}: {setNavbarOpen: (state: boolean) => void
      className="relative h-full w-3/5 max-w-sm bg-white drop-shadow-lg">
         <div className='flex items-center py-5 pt-6 justify-between px-4'>
             <Link href='/' className='text-sm'>Neprisijungęs</Link>
-            <button onClick={() => setNavbarOpen(false)}> <X /> </button>
+            <button onClick={() => setNavbarOpen(false)}> <X size={16} /> </button>
         </div>
+
+        <div className=" relative flex items-center w-full rounded px-3 pb-3">
+              <input className="p-1 h-8 text-xs border px-4 py-1 border-gray-400 border-r-0 rounded-l outline-none" placeholder="Įrašykite, ko ieškote" type="text" />
+              <span className="bg-emerald-500 relative text-white w-8 h-8 rounded flex items-center justify-center
+              rounded-l-none border-emerald-500 cursor-pointer
+              hover:bg-emerald-400">
+                <Search size={18} />
+
+              </span>
+            </div> 
+
         <h5 className='text-xs px-4 py-2'>Prekių katalogas</h5>
         <hr />
       <ul className="py-4">

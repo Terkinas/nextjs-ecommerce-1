@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import HeaderLine from '@/components/ui/HeaderLine'
+import Landing from '@/components/home/Landing'
+import CartTest from '@/components/home/CartTest'
+import CartView from '@/components/checkout/CartView'
 
 
 export default function Home() {
@@ -16,7 +19,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className={styles.main}>
-        
+        <Landing />
+        <CartTest />
+        <CartView />
       </main>
     </>
   )
